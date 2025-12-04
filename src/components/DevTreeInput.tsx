@@ -11,9 +11,9 @@ type DevTreeInputProps = {
 export default function DevTreeInput({ item, handleUrlChange, handleEnableLink }: DevTreeInputProps) {
 
     return (
-        <div className="bg-white shadow-sm p-5 flex items-center gap-3">
+        <div className="bg-white shadow-sm p-5 flex flex-wrap items-center gap-3">
             <div
-                className="w-12 h-12 bg-cover"
+                className="w-12 h-12 min-w-[48px] min-h-[48px] bg-cover bg-center bg-no-repeat flex-shrink-0"
                 style={{ backgroundImage: `url('/social/icon_${item.name}.svg')` }}
             ></div>
             
